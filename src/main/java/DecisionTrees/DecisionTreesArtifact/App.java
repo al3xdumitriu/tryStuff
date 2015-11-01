@@ -23,8 +23,11 @@ public class App {
 
 	public static void main(String[] args) {
 
+		Attributes.setAttr();
+		System.out.println(Attributes.attributes.toString());
+		System.out.println(Attributes.classes.toString());
 		App obj = new App();
-		obj.run();
+		//obj.run();
 
 	}
 
@@ -131,7 +134,7 @@ public class App {
 							/ (double) ((ArrayList) addedMap.get(sequence)).get(0);
 					if (frequency != 0)
 						result -= frequency * (Math.log(frequency) / Math.log(2));
-					// ar trebui sa adaug doar valorile optime ((ArrayList)
+					
 					addedMap.get(sequence).add(2, result);
 					//System.out.println(result);
 				}
